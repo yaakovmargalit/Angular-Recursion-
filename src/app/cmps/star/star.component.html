@@ -1,0 +1,4 @@
+<div *ngFor="let i of [starCount]" class="stars-box">
+    <p>⭐</p>
+    <app-star [starCount]="[starCount-1]" *ngIf="starCount>0"></app-star>
+</div>
