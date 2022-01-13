@@ -12,7 +12,6 @@ export class StarComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    // this.star = [this.starCount]
   }
 
 }

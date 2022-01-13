@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./recursion.component.scss']
 })
 export class RecursionComponent implements OnInit {
-  @Input() comments:any;
   @Input() stars:any;
   constructor() { }
 

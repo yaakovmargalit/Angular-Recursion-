@@ -1,13 +1,9 @@
-<div >
+<div>
+    <div *ngFor="let star of stars">
+        <div class="main-box">
+            <app-star [starCount]="[star]"></app-star>&nbsp; {{ star+1}}
+        </div>
+        <app-recursion [stars]="[stars -1]" *ngIf="stars>0"></app-recursion>
+    </div>
 
-     <div *ngFor="let star of stars" >
-         <!-- {{star+1}} -->
-         <div class="main-box">
-
-             <app-star [starCount]="[star]"></app-star>&nbsp; {{  star+1}}
-         </div>
-        <!-- <div *ngFor="let i of [star]">{{i}}</div> -->
-       <app-recursion [stars]="[stars -1]" *ngIf="stars>0"></app-recursion>
-     </div>
-
-  </div>
+</div>
